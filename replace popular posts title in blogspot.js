@@ -1,4 +1,3 @@
-<script>
     function getData5sLink(x) { window.open("https://www.data5s.net/search?q=" + x.innerHTML, "_blank") }
 
     function showTopFileId(e, fileId) {
@@ -24,4 +23,3 @@
         }
 
     }
-</script>
