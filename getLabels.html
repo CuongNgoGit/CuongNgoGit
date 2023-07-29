@@ -1,0 +1,89 @@
+<b:if cond='data:widgets.Blog.first.allBylineItems.labels'>
+  <data:widgets.Blog.first.allBylineItems.labels.label/>
+  <!-- Hiển thị tên nhãn -->
+</b:if>
+
+<b:loop values='data:posts' var='post'> // Vòng lặp bài viết
+  <b:loop values='data:post.labels' var='label'> // Vòng lặp nhãn
+    <!-- Hiển thị tên nhãn bài viết. -->
+  </b:loop>
+</b:loop>
+
+<b:loop values='data:post.labels' var='label'>
+  <data:label.url/> // liên kết nhãn
+  <data:label.name/> // Tên nhãn
+</b:loop>
+
+<b:loop values='data:post.labels' var='label'>
+  <b:if cond='data:label.name in ["Thủ thuật Blogspot", "Tiện ích Blogspot", "Thiết kế Blogspot"]'>
+    <data:label.url/>
+    <data:label.name/>
+    <!-- Chỉ hiển thị các nhãn có tên "Thủ thuật Blogspot", "Tiện ích Blogspot" và "Thiết kế Blogspot" -->
+  </b:if>
+</b:loop>
+
+<b:loop values='data:post.labels' var='label'>
+  <b:if cond='data:label.name not in ["Thủ thuật Blogspot", "Tiện ích Blogspot", "Thiết kế Blogspot"]'>
+    <data:label.url/>
+    <data:label.name/>
+    <!-- Không hiển thị các nhãn có tên "Thủ thuật Blogspot", "Tiện ích Blogspot" và "Thiết kế Blogspot" các nhãn còn lại vẫn hiển thị-->
+  </b:if>
+</b:loop>
+
+<b:loop index='item' values='data:post.labels' var='label'>
+  <b:if cond='data:item in [0,2,5]'>
+    <data:label.url/>
+    <data:label.name/>
+    <!-- Hiển thị các nhãn theo thứ tự 0, 2 và 5 -->
+  </b:if>
+</b:loop>
+
+<b:loop index='item' values='data:post.labels' var='label'>
+  <b:if cond='data:item lt 2'>
+    <data:label.url/>
+    <data:label.name/>
+    <!-- Hiển thị các nhãn bắt đầu từ vị trí từ 0 đến 2 -->
+  </b:if>
+</b:loop>
+
+<b:loop index='item' values='data:post.labels' var='label'>
+  <b:if cond='data:item gt 1'>
+    <data:label.url/>
+    <data:label.name/>
+    <!-- Hiển thị các nhãn bắt đầu từ vị trí thứ 2 trở đi -->
+  </b:if>
+</b:loop>
+
+<b:loop values='data:post.labels.length - 1' var='label'>
+  <b:eval expr='data:post.labels[label].url'/>
+  <b:eval expr='data:post.labels[label].name'/>
+  <!-- Chỉ hiển thị nhãn cuối cùng -->
+</b:loop>
+
+<b:with value='data:post.labels' var='filter'>
+  <b:loop index='i' values='data:filter' var='label'>
+    <b:if cond='data:filter.size neq data:i + 1'>
+      <data:label.name/>
+      <data:label.url/>
+      <!-- Hiển thị tất cả tên nhãn trong bài viết nhưng không hiển thị tên nhãn cuối -->
+    </b:if>
+  </b:loop>
+</b:with>
+
+<b:loop index='item' values='data:post.labels' var='label'>
+  <b:if cond='data:item lte 0'>
+    <b:eval expr='data:post.labels[0].url'/>
+    <b:eval expr='data:post.labels[0].name'/>
+    <!-- Chỉ hiển thị nhãn đầu tiên -->
+  </b:if>
+</b:loop>
+
+<b:loop values='data:post.labels.length - 1 to 0' var='label'>
+  <b:eval expr='data:post.labels[label].url'/>
+  <b:eval expr='data:post.labels[label].name'/>
+</b:loop>
+
+<b:loop reverse='true' values='data:post.labels' var='label'>
+  <data:label.url/>
+  <data:label.name/>
+</b:loop>

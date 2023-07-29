@@ -1,0 +1,483 @@
+<h2>1. data:view</h2>
+
+<data:view.postId />
+<data:view.pageId />
+<data:view.type />
+<data:view.featuredImage />
+<data:view.title />
+<data:view.description />
+<data:view.url />
+<data:view.isPost />
+<data:view.isPage />
+<data:view.isHomepage />
+<data:view.isSearch />
+<data:view.isArchive />
+<data:view.isError />
+<data:view.isLabelSearch />
+<data:view.isSingleItem />
+<data:view.isMultipleItems />
+<data:view.isMobile />
+<data:view.isPreview />
+<data:view.isLayoutMode />
+<data:view.search.resultsMessageHtml />
+<data:view.search.resultsMessage />
+<data:view.search.query />
+<data:view.search.label />
+<data:view.archive.rangeMessage />
+<data:view.archive.day />
+<data:view.archive.month />
+<data:view.archive.year />
+
+<h2>2. data:blog</h2>
+
+<data:blog.blogId />
+<data:blog.title />
+<data:blog.pageTitle />
+<data:blog.pageName />
+<data:blog.pageType />
+<data:blog.view />
+<data:blog.url />
+<data:blog.homepageUrl />
+<data:blog.searchUrl />
+<data:blog.blogspotFaviconUrl />
+<data:blog.bloggerUrl />
+<data:blog.metaDescription />
+<data:blog.analyticsAccountNumber />
+<data:blog.locale />
+<data:blog.localeUnderscoreDelimited />
+<data:blog.languageDirection />
+<data:blog.encoding />
+<data:blog.hasCustomDomain />
+<data:blog.httpsEnabled />
+<data:blog.enabledCommentProfileImages />
+<data:blog.isPrivate />
+<data:blog.isPrivateBlog />
+<data:blog.adultContent />
+<data:blog.isMobileRequest />
+<data:blog.mobileClass />
+<data:blog.feedLinks />
+<data:blog.googleProfileUrl />
+<data:blog.postImageUrl />
+<data:blog.postImageThumbnailUrl />
+<data:blog.latencyHeadScript />
+<data:blog.mobileHeadScript />
+<data:blog.dynamicViewsScriptSrc />
+<data:blog.dynamicViewsCommentsSrc />
+<data:blog.ieCssRetrofitLinks />
+<data:blog.adsenseHostId />
+<data:blog.adsenseClientId />
+<data:blog.adsenseHasAds />
+<data:blog.plusOneApiSrc />
+<data:blog.gPlusViewType />
+<data:blog.jumpLinkMessage />
+<data:blog.hasCustomJumpLinkMessage />
+<data:blog.sharing.googlePlusBootstrap />
+<data:blog.sharing.googlePlusShareButtonWidth />
+<b:loop values='data:blog.sharing.platforms' var='platform'>
+    <data:platform.name />
+    <data:platform.key />
+    <data:platform.shareMessage />
+    <data:platform.target />
+</b:loop>
+
+<h2>3. data:messages</h2>
+
+<data:messages.adsGoHere />
+<data:messages.archive />
+<data:messages.at />
+<data:messages.authorSaid />
+<data:messages.authorSaidWithLink />
+<data:messages.blogArchive />
+<data:messages.blogAuthors />
+<data:messages.by />
+<data:messages.byAuthor />
+<data:messages.byAuthorLink />
+<data:messages.comments />
+<data:messages.configurationRequired />
+<data:messages.copy />
+<data:messages.copyToClipboard />
+<data:messages.deleteComment />
+<data:messages.edit />
+<data:messages.emailAddress />
+<data:messages.emailPost />
+<data:messages.euCookieNotice />
+<data:messages.euCookieNotice2018 />
+<data:messages.euCookieResponsibility />
+<data:messages.euCookieResponsibility2018 />
+<data:messages.featured />
+<data:messages.getEmailNotifications />
+<data:messages.gotIt />
+<data:messages.hidden />
+<data:messages.home />
+<data:messages.image />
+<data:messages.joinTheConversation />
+<data:messages.keepReading />
+<data:messages.labels />
+<data:messages.latestPosts />
+<data:messages.learnMore />
+<data:messages.linkCopiedToClipboard />
+<data:messages.loadMorePosts />
+<data:messages.loading />
+<data:messages.moreEllipsis />
+<data:messages.morePosts />
+<data:messages.myBlogList />
+<data:messages.myFavoriteSites />
+<data:messages.myPhoto />
+<data:messages.newer />
+<data:messages.newerPosts />
+<data:messages.newest />
+<data:messages.noResultsFound />
+<data:messages.noTitle />
+<data:messages.numberOfComments />
+<data:messages.ok />
+<data:messages.older />
+<data:messages.olderPosts />
+<data:messages.oldest />
+<data:messages.onlyTeamMembersCanComment />
+<data:messages.on />
+<data:messages.photo />
+<data:messages.popularPosts />
+<data:messages.popularPostsFromThisBlog />
+<data:messages.postAComment />
+<data:messages.postLink />
+<data:messages.postedBy />
+<data:messages.postedByAuthor />
+<data:messages.postedByAuthorLink />
+<data:messages.posts />
+<data:messages.poweredByBlogger />
+<data:messages.poweredByBloggerLink />
+<data:messages.readMore />
+<data:messages.recentPosts />
+<data:messages.reportAbuse />
+<data:messages.search />
+<data:messages.searchBlog />
+<data:messages.searchThisBlog />
+<data:messages.share />
+<b:eval expr='data:blog.sharing.platforms[0].shareMessage' />
+<b:eval expr='data:blog.sharing.platforms[1].shareMessage' />
+<b:eval expr='data:blog.sharing.platforms[2].shareMessage' />
+<b:eval expr='data:blog.sharing.platforms[3].shareMessage' />
+<b:eval expr='data:blog.sharing.platforms[4].shareMessage' />
+<b:eval expr='data:blog.sharing.platforms[5].shareMessage' />
+<b:eval expr='data:blog.sharing.platforms[6].shareMessage' />
+<data:messages.showAll />
+<data:messages.showLess />
+<data:messages.showMore />
+<data:messages.skipToMainContent />
+<data:messages.someOfMyFavoriteSites />
+<data:messages.subscribe />
+<data:messages.subscribeTo />
+<data:messages.subscribeToThisBlog />
+<data:messages.templateImagesBy />
+<data:messages.templateImagesByLink />
+<data:messages.theresNothingHere />
+<data:messages.title />
+<data:messages.viewAll />
+<data:messages.viewMyCompleteProfile />
+<data:messages.visible />
+<data:messages.visitProfile />
+<data:messages.visitSite />
+<data:messages.widget />
+<data:messages.widgetNotAvailableInPreview />
+<data:messages.widgetNotAvailableOnHttps />
+<data:messages.youMayLikeThesePosts />
+
+<h2>4. data:widget Blog</h2>
+<h3>version 1</h3>
+
+<b:widget id='Blog1' locked='true' title='Bài đăng trên Blog' type='Blog' version='1'>
+    <b:includable id='main'>
+
+        <data:title />
+        <data:description />
+        <data:numPosts />
+        <data:mobile />
+        <data:postLabelsLabel />
+        <data:timestampLabel />
+        <data:authorLabel />
+        <data:commentLabel />
+        <data:postLocationLabel />
+        <data:reactionsLabel />
+        <data:showTimestamp />
+        <data:showLocation />
+        <data:showAuthor />
+        <data:showPostLabels />
+        <data:showReactions />
+        <data:showDummy />
+        <data:showPlusOne />
+        <data:showMobileShare />
+        <data:showEmailButton />
+        <data:showBlogThisButton />
+        <data:showTwitterButton />
+        <data:showFacebookButton />
+        <data:showPinterestButton />
+        <data:olderPageUrl />
+        <data:olderPageTitle />
+        <data:newerPageUrl />
+        <data:newerPageTitle />
+        <data:mobileLinkUrl />
+        <data:mobileLinkMsg />
+        <data:desktopLinkUrl />
+        <data:desktopLinkMsg />
+        <data:homeMsg />
+        <data:navMessage />
+        <data:postCommentMsg />
+        <data:blogCommentMessage />
+        <data:blogTeamBlogMessage />
+        <data:feedLinksMsg />
+        <data:commentPostedByMsg />
+        <data:shareMsg />
+        <data:shareToTwitterMsg />
+        <data:shareToFacebookMsg />
+        <data:shareToPinterestMsg />
+        <data:blogThisMsg />
+        <data:emailThisMsg />
+        <data:emailPostMsg />
+        <data:editPostMsg />
+        <data:deleteCommentMsg />
+        <data:adCode />
+        <data:cmtIframeInitialHeight />
+        <data:showCmtPopup />
+        <b:loop values='data:feedLinks' var='feedLink'>
+            <data:feedLink.url />
+            <data:feedLink.name />
+            <data:feedLink.feedType />
+            <data:feedLink.mimeType />
+        </b:loop>
+        <b:loop values='data:posts' var='post'>
+            <data:post.id />
+            <data:post.title />
+            <data:post.body />
+            <data:post.snippet />
+            <data:post.longSnippet />
+            <data:post.url />
+            <data:post.link />
+            <data:post.thumbnailUrl />
+            <data:post.firstImageUrl />
+            <data:post.date />
+            <data:post.dateHeader />
+            <data:post.timestamp />
+            <data:post.timestampISO8601 />
+            <data:post.lastUpdatedISO8601 />
+            <data:post.author />
+            <data:post.authorUrl />
+            <data:post.authorProfileUrl />
+            <data:post.authorAboutMe />
+            <data:post.authorPhoto.url />
+            <data:post.authorPhoto.width />
+            <data:post.authorPhoto.height />
+            <data:post.hasJumpLink />
+            <data:post.jumpText />
+            <data:post.isFirstPost />
+            <data:post.isDateStart />
+            <data:post.adminClass />
+            <data:post.editUrl />
+            <data:post.allowComments />
+            <data:post.allowNewComments />
+            <data:post.noNewCommentsText />
+            <data:post.numComments />
+            <data:post.commentLabelFull />
+            <data:post.addCommentUrl />
+            <data:post.addCommentOnclick />
+            <data:post.commentPagingRequired />
+            <data:post.hasOlderLinks />
+            <data:post.oldLinkClass />
+            <data:post.oldestLinkUrl />
+            <data:post.oldestLinkText />
+            <data:post.olderLinkUrl />
+            <data:post.olderLinkText />
+            <data:post.hasNewerLinks />
+            <data:post.newLinkClass />
+            <data:post.newerLinkUrl />
+            <data:post.newerLinkText />
+            <data:post.newestLinkUrl />
+            <data:post.newestLinkText />
+            <data:post.commentRangeText />
+            <data:post.commentFormIframeSrc />
+            <data:post.embedCommentForm />
+            <data:post.showThreadedComments />
+            <data:post.commentSrc />
+            <data:post.commentFeed />
+            <data:post.commentJso />
+            <data:post.commentHtml />
+            <data:post.commentMsgs />
+            <data:post.commentConfig />
+            <data:post.avatarIndentClass />
+            <data:post.includeAd />
+            <data:post.allowIframeComments />
+            <data:post.iframeCommentSrc />
+            <data:post.viewType />
+            <data:post.commentSource />
+            <data:post.dummyTag />
+            <data:post.googlePlusShareTag />
+            <data:post.emailPostUrl />
+            <data:post.sharePostUrl />
+            <data:post.reactionsUrl />
+            <data:post.cmtfpIframe />
+            <data:post.appRpcRelayPath />
+            <data:post.location.mapsUrl />
+            <data:post.location.name />
+            <b:loop values='data:labels' var='label'>
+                <data:label.name />
+                <data:label.url />
+                <data:label.isLast />
+            </b:loop>
+            <b:loop values='data:feedLinks' var='feedLink'>
+                <data:feedLink.url />
+                <data:feedLink.name />
+                <data:feedLink.feedType />
+                <data:feedLink.mimeType />
+            </b:loop>
+            <b:loop values='data:comments' var='comment'>
+                <data:comment.id />
+                <data:comment.inReplyTo />
+                <data:comment.cmtBodyIdPostfix />
+                <data:comment.url />
+                <data:comment.body />
+                <data:comment.timestamp />
+                <data:comment.timestampValue />
+                <data:comment.timestampAbs />
+                <data:comment.author />
+                <data:comment.authorUrl />
+                <data:comment.authorPhoto.url />
+                <data:comment.authorPhoto.width />
+                <data:comment.authorPhoto.height />
+                <data:comment.favicon />
+                <data:comment.authorAvatarSrc />
+                <data:comment.authorAvatarImage />
+                <data:comment.anchorName />
+                <data:comment.deleteUrl />
+                <data:comment.isDeleted />
+                <data:comment.adminClass />
+                <data:comment.authorClass />
+            </b:loop>
+            <b:loop values='data:enclosures' var='enclosure'>
+                <data:enclosure.url />
+                <data:enclosure.mimeType />
+            </b:loop>
+        </b:loop>
+
+    </b:includable>
+</b:widget>
+
+<h3>version 2</h3>
+
+<b:widget id='Blog1' locked='true' title='Bài đăng trên Blog' type='Blog' version='2'>
+    <b:includable id='main'>
+
+        <data:title />
+        <data:description />
+        <data:olderPageUrl />
+        <data:newerPageUrl />
+        <data:navMessage />
+        <data:adCode />
+        <data:adClientId />
+        <data:cmtIframeInitialHeight />
+        <data:showCmtPopup />
+        <data:messages.blogComment />
+        <b:loop values='data:feedLinks' var='feedLink'>
+            <data:feedLink.url />
+            <data:feedLink.name />
+            <data:feedLink.feedType />
+            <data:feedLink.mimeType />
+        </b:loop>
+        <b:loop values='data:posts' var='post'>
+            <data:post.id />
+            <data:post.title />
+            <data:post.body />
+            <data:post.snippets.short />
+            <data:post.snippets.long />
+            <data:post.url />
+            <data:post.link />
+            <data:post.thumbnailUrl />
+            <data:post.featuredImage />
+            <data:post.date />
+            <data:post.lastUpdated />
+            <data:post.author.name />
+            <data:post.author.profileUrl />
+            <data:post.author.aboutMe />
+            <data:post.author.authorPhoto.image />
+            <data:post.author.authorPhoto.width />
+            <data:post.author.authorPhoto.height />
+            <data:post.hasJumpLink />
+            <data:post.adminClass />
+            <data:post.postAuthorClass />
+            <data:post.allowComments />
+            <data:post.allowNewComments />
+            <data:post.noNewCommentsText />
+            <data:post.numberOfComments />
+            <data:post.commentsUrl />
+            <data:post.commentsUrlOnclick />
+            <data:post.commentPagingRequired />
+            <data:post.hasOlderLinks />
+            <data:post.oldLinkClass />
+            <data:post.oldestLinkUrl />
+            <data:post.olderLinkUrl />
+            <data:post.hasNewerLinks />
+            <data:post.newLinkClass />
+            <data:post.newerLinkUrl />
+            <data:post.newestLinkUrl />
+            <data:post.commentRangeText />
+            <data:post.commentFormIframeSrc />
+            <data:post.embedCommentForm />
+            <data:post.showThreadedComments />
+            <data:post.commentSrc />
+            <data:post.commentFeed />
+            <data:post.commentJso />
+            <data:post.commentHtml />
+            <data:post.commentMsgs />
+            <data:post.commentConfig />
+            <data:post.avatarIndentClass />
+            <data:post.includeAd />
+            <data:post.adNumber />
+            <data:post.allowIframeComments />
+            <data:post.iframeCommentSrc />
+            <data:post.viewType />
+            <data:post.commentSource />
+            <data:post.emailPostUrl />
+            <data:post.shareUrl />
+            <data:post.reactionsUrl />
+            <data:post.cmtfpIframe />
+            <data:post.appRpcRelayPath />
+            <data:post.location.mapsUrl />
+            <data:post.location.name />
+            <b:loop values='data:labels' var='label'>
+                <data:label.name />
+                <data:label.url />
+            </b:loop>
+            <b:loop values='data:feedLinks' var='feedLink'>
+                <data:feedLink.url />
+                <data:feedLink.name />
+                <data:feedLink.feedType />
+                <data:feedLink.mimeType />
+            </b:loop>
+            <b:loop values='data:comments' var='comment'>
+                <data:comment.id />
+                <data:comment.inReplyTo />
+                <data:comment.cmtBodyIdPostfix />
+                <data:comment.url />
+                <data:comment.body />
+                <data:comment.timestamp />
+                <data:comment.timestampValue />
+                <data:comment.timestampAbs />
+                <data:comment.author />
+                <data:comment.authorUrl />
+                <data:comment.authorUserType />
+                <data:comment.authorPhoto.url />
+                <data:comment.authorPhoto.width />
+                <data:comment.authorPhoto.height />
+                <data:comment.authorAvatarSrc />
+                <data:comment.authorAvatarImage />
+                <data:comment.anchorName />
+                <data:comment.deleteUrl />
+                <data:comment.isDeleted />
+                <data:comment.adminClass />
+            </b:loop>
+            <b:loop values='data:enclosures' var='enclosure'>
+                <data:enclosure.url />
+                <data:enclosure.mimeType />
+            </b:loop>
+        </b:loop>
+
+    </b:includable>
+</b:widget>
